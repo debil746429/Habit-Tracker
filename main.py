@@ -305,7 +305,7 @@ class HabitRepository(IHabit):
 =============================================================
 '''
 from time import sleep
-from os import system
+import os
 from rich.console import Console
 from rich.table import Table
 from rich_pyfiglet import RichFiglet 
@@ -344,7 +344,10 @@ if __name__=="__main__":
 
     while True:
         # clear screen
-        system("clear")
+        if os.name == "nt":
+            os.system("cls")
+        else:
+            os.system("clear")
         # our project title
         project_title()
         # print menu
