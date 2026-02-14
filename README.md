@@ -40,12 +40,12 @@ Run the app:
 python main.py
 ```
 
-## Community & Contributions
+- **Sample**
 
-- **Sample Video:**  
-  <video src="./Habit Tracker.mp4" controls autoplay style="max-width: 100%; height: auto;">
-    Your browser does not support the video tag.
-  </video>
+  <img src="Habit%20Tracker.png" alt="Habit Tracker sample" width="600"/>
+
+
+## Community & Contributions
 
 - **License:**  
   The project is licensed under the [MIT License](./LICENSE.md).
