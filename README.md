@@ -43,7 +43,9 @@ python main.py
 ## Community & Contributions
 
 - **Sample Video:**  
-  [Watch a demo of Habit Tracker here](./Habit%20Tracker.mp4)
+  <video src="./Habit Tracker.mp4" controls autoplay style="max-width: 100%; height: auto;">
+    Your browser does not support the video tag.
+  </video>
 
 - **License:**  
   The project is licensed under the [MIT License](./LICENSE.md).
