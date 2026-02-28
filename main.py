@@ -254,7 +254,7 @@ class HabitRepository(IHabitRepository):
             )
             .where(
                 Streaks.user_habit == habit,
-                func.date(Streaks.created_at) == func.date(func.now()) - 1 
+                func.date(Streaks.created_at) == func.date(func.now(),'-1 day') # ==> sqlite3 
             )
         )
         try:
@@ -447,7 +447,8 @@ if __name__=="__main__":
                         current_streaks += 1
 
                     best_streaks = Service.getBestStreaks(user_habit)
-                    
+                    if current_streaks > best_streaks:
+                        best_streaks = current_streaks
                     table.add_row(user_habit,str(current_streaks),str(best_streaks))
                 
                 console.print(table,highlight=True)
